@@ -14,9 +14,11 @@ export default class Sor{
     sorMegejelnit(){
         this.#szuloElem.append(`
             <tr class="${this.id}">
+            <td><button class="torles">🗑️</button></td>
             <td>${this.#obj.nev}</td>
             <td>${this.#obj.ar}</td>
-            <td><button class="torles">🗑️</button></td>
+            <td>${this.#obj.kategoria}</td>
+            <td>${this.#obj.db}</td>
             </tr> 
         `)
     }
